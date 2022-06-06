@@ -13,7 +13,7 @@ Agora você pode voltar à classe RelatorioContas e invocar o método exibirDeta
 */
 public class RelatorioContas() {            
     exibirDetalhes(Conta [] contas) {
-        for (int i = 0; i < Conta.length; i++) {
+        for (int i = 0; i < contas.length; i++) {
         }
         return ;
     }
