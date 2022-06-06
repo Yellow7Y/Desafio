@@ -15,6 +15,7 @@ public class RelatorioContas() {
     exibirDetalhes(Conta [] contas) {
         for (int i = 0; i < Conta.length; i++) {
         }
-        return ;
+        int i;
+        System.out.println("CONTA"  + contas[i].getDescricao + "com o valor " + contas[i].getValor() + "com a data de vencimento " + contas[i].getDataVencimento() + "do cliente ");
     }
 }
