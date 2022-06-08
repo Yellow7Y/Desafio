@@ -1,6 +1,6 @@
-package DESAFIO;
+package Desafio;
 
-public class ContaPagar extends Conta {
+public abstract class ContaPagar extends Conta {
 
     private Fornecedor fornecedor;
 
