@@ -13,8 +13,15 @@ Agora você pode voltar à classe RelatorioContas e invocar o método exibirDeta
 */
 public class RelatorioContas {
     void exibirListagem(Conta [] contas) {
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+        System.out.println("                                         RELATÓRIO DE CONTAS PARA: PAGAR E RECEBER");
+        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n");
         for (int i = 0; i < contas.length; i++) {
-            System.out.println("CONTA " + contas[i].getDescricao + " com o valor de R$ " + contas[i].getValor() + " com a data de vencimento para a data: " + contas[i].getDataVencimento());
+            System.out.println("Conta: " + contas[i].getDescricao());
+            System.out.println("Valor de R$ " + contas[i].getValor());
+            System.out.println("Data de vencimento: " + contas[i].getDataVencimento());
+            System.out.println("\n");
         }
+        System.out.println("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
     }
 }
