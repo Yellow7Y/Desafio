@@ -1,6 +1,6 @@
-package DESAFIO;
+package Desafio;
 
-public class ContaReceber extends Conta {
+public abstract class ContaReceber extends Conta {
 
     private Cliente cliente;
 
