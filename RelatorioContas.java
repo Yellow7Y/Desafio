@@ -1,4 +1,4 @@
-package DESAFIO;
+package Desafio;
 
 /*
 Você precisa exibir relatórios de contas a pagar e receber, pois ajudará no controle do que tem para pagar e receber na empresa. Para isso, precisará de uma nova classe chamada RelatorioContas.
@@ -11,11 +11,10 @@ Ao fazer isso, você será obrigado a implementar esse novo método nas subclass
 legal para aparecer em um relatório.
 Agora você pode voltar à classe RelatorioContas e invocar o método exibirDetalhes() durante a listagem. Veja que a classe RelatorioContas só deve conhecer o nome do método exibirDetalhes(), mais nada!
 */
-public class RelatorioContas() {            
-    exibirDetalhes(Conta [] contas) {
-        for (int i = 0; i < Conta.length; i++) {
+public class RelatorioContas {
+    void exibirListagem(Conta [] contas) {
+        for (int i = 0; i < contas.length; i++) {
+            System.out.println("CONTA " + contas[i].getDescricao + " com o valor de R$ " + contas[i].getValor() + " com a data de vencimento para a data: " + contas[i].getDataVencimento());
         }
-        int i;
-        System.out.println("CONTA"  + contas[i].getDescricao + "com o valor " + contas[i].getValor() + "com a data de vencimento " + contas[i].getDataVencimento() + "do cliente ");
     }
 }
