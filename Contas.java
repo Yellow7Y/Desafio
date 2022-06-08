@@ -1,6 +1,7 @@
-package DESAFIO;
+package Desafio;
 
-public abstract class Conta {
+abstract class Conta {
+    public String getDescricao;
     protected SituacaoConta situacaoConta;
     private String descricao;
     private Double valor;
@@ -39,4 +40,8 @@ public abstract class Conta {
     public void setDataVencimento(String dataVencimento) {
         this.dataVencimento = dataVencimento;
     }
+
+    public abstract void pagar();
+
+    public abstract void receber();
 }
